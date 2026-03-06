@@ -1,7 +1,6 @@
-// src/app/api/verify-invite/route.ts
-import { NextResponse } from 'next/server';
+import { NextResponse } from "next/server";
 
-export async function GET() {
-  // 나중에 여기에 초대 코드 검증 로직이 들어갑니다.
-  return NextResponse.json({ message: "초대 코드 검증 API 준비 중" });
+export async function POST(request: Request) {
+  // 나중에 Firebase와 연결하여 실제 코드를 검증하는 로직이 들어갑니다.
+  return NextResponse.json({ success: true, message: "API 통신 정상 작동" });
 }
